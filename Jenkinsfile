@@ -16,13 +16,7 @@ pipeline {
 
     stages {
 
-        stage('Code Checkout') {
-            steps {
-                git branch: 'master',
-                    url: 'https://github.com/loujainrouached/DevopsTest.git',
-                    credentialsId: 'jenkins-example-github-pat'
-            }
-        }
+        
 
         stage('Code Build') {
             steps {
