@@ -1,9 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'M2_HOME'
-    }
+   tools {
+    maven 'MAVEN_HOME'
+}
+
 
     options {
         timeout(time: 5, unit: 'MINUTES')
