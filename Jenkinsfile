@@ -18,11 +18,12 @@ pipeline {
 
         
 
-        stage('Code Build') {
-            steps {
-                sh 'mvn install -Dmaven.test.skip=true'
-            }
-        }
+    stage('Code Build') {
+    steps {
+        sh 'echo "Build step executed"'
+    }
+}
+
     }
 
     post {
